@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:background="#444544"
+    android:layout_height="match_parent">
+
+    <com.dahai.winkview.PasswordEditText
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:padding="5dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/edittext"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/mEditText"
+            android:labelFor="@+id/mEditText"
+            android:maxLines="1"
+            android:background="#fff"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:inputType="textPassword"
+            android:layout_height="40dp" />
+
+        <com.dahai.winkview.WinkView
+            android:id="@+id/mMyView"
+            android:background="#fff"
+            app:isOpen="false"
+            android:layout_width="30dp"
+            android:layout_height="30dp" />
+
+    </com.dahai.winkview.PasswordEditText>
+
+</LinearLayout>
